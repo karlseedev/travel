@@ -1,0 +1,15 @@
+/* 포트폴리오 사본 전용 — 콘솔 화면 위에 얹는 것만 둔다(콘솔 자체 스타일은 건드리지 않는다). */
+.pf-strip{display:flex;justify-content:center;align-items:center;gap:6px 16px;flex-wrap:wrap;
+  background:#1f2a37;color:#c9d2dc;padding:7px 16px;box-sizing:border-box;
+  font:500 12.5px/1.5 system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif}
+.pf-strip b{color:#fff;font-weight:700}
+.pf-strip a{color:#9cc4ff;text-decoration:none;font-weight:700}
+.pf-strip a:hover{text-decoration:underline}
+.pf-sub{font-size:14px;margin:22px 0 8px;color:#3a3f45}
+.pf-sub .count{margin-left:4px}
+#pf-toast{position:fixed;left:50%;top:40px;transform:translateX(-50%);z-index:10000;
+  box-sizing:border-box;width:min(560px,92vw);padding:18px 28px;text-align:center;
+  background:#1f2a37;color:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.35);
+  font:700 16px/1.5 system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif;
+  opacity:0;pointer-events:none;transition:opacity .25s ease}
+#pf-toast.show{opacity:1}
